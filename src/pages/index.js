@@ -8,7 +8,8 @@ const Home = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '100vh'
+                height: '100vh',
+                border: '1px solid rgba(0, 0, 0, 0.05)'
             }}
         >
             <h1>Welcome to NBA Database</h1>
