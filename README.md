@@ -29,7 +29,7 @@ After you done installing the packages, then create react app using
 ### Home page:
 The home page will have a navigation bar at the top that guides through routes of different pages and it will also have a button that once clicked will navigate to the nba player page.
 
-![Screen Shot 2022-12-04 at 4.45.21 PM.png](Screen Shot 2022-12-04 at 4.45.21 PM.png)
+![1](Screen Shot 2022-12-04 at 4.45.21 PM.png)
 
 ### NBA Players:
 If the user does not have an account, they are able to click the register link in order to create an account. To create an account, the user must enter a username and a password and click the Register button. This will create their account and take them to the dashboard, which is the “My Games” page which will be blank since they don’t have any games yet.
@@ -47,7 +47,6 @@ The store page has all the games available in the store. There is a search bar a
 ### NBA Championship:
 Clicking the “Store” button takes you to the store page. Clicking the “My Games” button takes you to the dashboard. Clicking the “Sign In” page takes you to the login page.
 
-![3](https://user-images.githubusercontent.com/78890952/165027244-8ffbf2be-7af9-4cba-8f0d-874e9ff92ee6.PNG)
 
 
 ### Stopping the application:
