@@ -1,70 +1,54 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Project Overview
-
+# User Manual (Project Overview)
 This is the nba website that allows the user to analyze data about nba players, teams, salaries and championships.
 
-### `npm start`
+### Technology stack (PERN)
+Install the following software in order:
+* PostgreSql
+* Node.js
+* EXPRESS 
+* React
+* React-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install EXPRESS, run the following command: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<code>npm install express</code>
 
-### `npm test`
+To install React, run the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<code>npm install react</code>
 
-### `npm run build`
+To install React-router-dom, run the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<code>npm install react-router-dom</code>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After you done installing the packages, then create react app using
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<code>npm create-react-app</code>
 
-### `npm run eject`
+# Application Walkthrough 
+### Home page:
+The home page will have a navigation bar at the top that guides through routes of different pages and it will also have a button that once clicked will navigate to the nba player page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![img.png](img.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### NBA Players:
+If the user does not have an account, they are able to click the register link in order to create an account. To create an account, the user must enter a username and a password and click the Register button. This will create their account and take them to the dashboard, which is the “My Games” page which will be blank since they don’t have any games yet.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Player's Salaries:
+On the dashboard, the user can view all games that are in their wishlist. In order to remove a game from your wishlist, press the "Delete Game" button and it will be removed from your list.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### NBA Team:
+The store page has all the games available in the store. There is a search bar at the top of the page that allows you to search for a specific game based on the title. In order to filter the list of games based on genre, rating, or price, you can use the buttons on the top and press enter. The games that match the criteria will remain on the page. In order to add a game to your wishlist, you simply have to press the “Add Game” button beside the game, which will add a copy of it to the “My Games” page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### NBA Championship:
+Clicking the “Store” button takes you to the store page. Clicking the “My Games” button takes you to the dashboard. Clicking the “Sign In” page takes you to the login page.
 
-### Analyzing the Bundle Size
+![3](https://user-images.githubusercontent.com/78890952/165027244-8ffbf2be-7af9-4cba-8f0d-874e9ff92ee6.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Stopping the application:
+In order to end the application, simply close the tab on your browser.
