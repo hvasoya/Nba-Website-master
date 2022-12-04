@@ -18,7 +18,13 @@ const Nbaplayer = () => {
     
     return (
     <div className='Players'>
-        <table className="table my-5">
+        <table className="table mt-5 text-center">
+            <thead>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Position</th>
+                <th>Age</th>
+            </thead>
             <tbody>
                 {players.map(player => (
                     <tr key={player.player_name}>
