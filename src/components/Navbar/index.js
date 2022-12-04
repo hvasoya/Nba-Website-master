@@ -33,16 +33,16 @@ const Navbar = () => {
                         Home
                     </NavLink>
                     <NavLink to='/nbaplayer' activeStyle>
-                        Nbaplayer
+                        NBA Players
                     </NavLink>
                     <NavLink to='/nbasalary' activeStyle>
-                        Nbasalary
+                        NBA Player Salaries
                     </NavLink>
                     <NavLink to='/nbacoach' activeStyle>
-                        Nbacoach
+                        NBA Teams
                     </NavLink>
                     <NavLink to='/nbachamp' activeStyle>
-                        Nbachamp
+                        NBA Championships
                     </NavLink>
                     {/* Second Nav */}
                     {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

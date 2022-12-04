@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nbacoach = () => {
+const Nbateam = () => {
     return (
         <div
             style={{
@@ -15,4 +15,4 @@ const Nbacoach = () => {
     );
 };
 
-export default Nbacoach;
+export default Nbateam;
