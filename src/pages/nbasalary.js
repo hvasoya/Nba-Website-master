@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 const Nbasalary = () => {
-    const [salaries, setSalaries] = useState([]);
+    const [minSalary, setMinSalary] = useState([]);
+    const [maxSalary, setMaxSalary] = useState([]);
+
 
     async function onEnter(){
         try{
@@ -18,6 +20,12 @@ const Nbasalary = () => {
     
     return (
     <div className='salaries'>
+        <Form style = {{marginTop: 25 }}>
+            <label>Minimum Salary</label>
+            <input type="number" step="2" id="salaryVal" onChange={e => setMinSalary}></input>
+            <label>Max Salary</label>
+            <input type="number" step="2" id="salary1Val" onChange={e => setMaxSalary}></input>
+        </Form>
        <table className='tableSalary'>
             <thead>
                 <th>ID</th>

@@ -19,6 +19,12 @@ const Nbachamp = () => {
     
     return (
     <div className='Champs'>
+         <label>Finals Result:</label>
+            {<select name = 'teamValue' size={teams.size + 1} onChange={e => setTeam(e.target.value)}>
+                <option value="All">All</option>
+                <option value="Won">Won</option>
+                <option value="Lost">Lost</option>
+            </select> }
        <table className='tableChamps'>
             <thead>
                 <th>Year</th>

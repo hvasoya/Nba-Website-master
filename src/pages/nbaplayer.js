@@ -64,9 +64,9 @@ const Nbaplayer = () => {
         getPositions();
       }, []);
 
-      useEffect(() => {
-        onPageLoad();
-      }, []);
+    //   useEffect(() => {
+    //     onPageLoad();
+    //   }, []);
 
     return (
     <div className='Players'>

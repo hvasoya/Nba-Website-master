@@ -2,7 +2,7 @@ import React, {useState, useEffect, Fragment} from 'react';
 const Nbateam = () => {
     const [teams, setTeams] = useState([]);
     const [minExperience, setMinExperience] = useState([]);
-
+    const [maxExperience, setMaxExperience] = useState([]);
 
     async function onEnter(){
         try{
@@ -33,6 +33,12 @@ const Nbateam = () => {
     return (
     <Fragment>
     <div className='teams'>
+        <Form style = {{marginTop: 25 }}>
+            <label>Minimum Experience</label>
+            <input type="number" step="2" id="experienceVal" onChange={e => setMinExperience}></input>
+            <label>Max Experience</label>
+            <input type="number" step="2" id="experience1Val" onChange={e => setMaxExperience}></input>
+        </Form>
        <table className='tableTeams'>
             <thead>
                 <th>Coach</th>
