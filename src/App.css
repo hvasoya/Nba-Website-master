@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-body{
-  background-image:url(./assets/nba.webp);
-  background-size: cover;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
