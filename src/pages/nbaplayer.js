@@ -85,6 +85,9 @@ const Nbaplayer = () => {
                     <option value={position.player_position}>{position.player_position}</option>
                 ))}
             </select>
+            <button type="button" style= {{marginLeft:20}}>  
+            Submit
+            </button>
         </Form>
        <table className='tablePlayer'>
             <thead>

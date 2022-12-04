@@ -1,6 +1,9 @@
 import React, {useState, useEffect, Fragment} from 'react';
+import {Form} from 'reactstrap'
+
 const Nbateam = () => {
     const [teams, setTeams] = useState([]);
+    const [team, setTeam] = useState([]);
     const [minExperience, setMinExperience] = useState([]);
     const [maxExperience, setMaxExperience] = useState([]);
 
@@ -38,6 +41,9 @@ const Nbateam = () => {
             <input type="number" step="2" id="experienceVal" onChange={e => setMinExperience}></input>
             <label>Max Experience</label>
             <input type="number" step="2" id="experience1Val" onChange={e => setMaxExperience}></input>
+            <button type="button" style= {{marginLeft:20}}>  
+            Submit
+            </button>
         </Form>
        <table className='tableTeams'>
             <thead>

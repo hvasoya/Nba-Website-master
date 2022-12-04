@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 const Nbachamp = () => {
     const [champs, setChamps] = useState([]);
+    const [teams, setTeams] = useState([]);
+    const [team, setTeam] = useState([]);
 
     async function onEnter(){
         try{
@@ -25,6 +27,9 @@ const Nbachamp = () => {
                 <option value="Won">Won</option>
                 <option value="Lost">Lost</option>
             </select> }
+            <button type="button" style= {{marginLeft:20}}>  
+            Submit
+            </button>
        <table className='tableChamps'>
             <thead>
                 <th>Year</th>
