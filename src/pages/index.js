@@ -10,30 +10,31 @@ const Home = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '100vh',
+                height: '85vh',
                 border: '1px solid rgba(0, 0, 0, 0.05)'
             }}
         >
+             
             <img style={{
                 display: 'flex',
                 justifyContent: 'normal',
                 alignItems: 'center',
-                height: '75vh',
-                width: '3000',
+                height: '90vh',
+                width: '300',
                 fontStretch: 'extra-condensed',
                 alignSelf: 'stretch',
-                paddingTop: '50px',
-                paddingLeft: '50px',
-                paddingRight: '1px',
+                paddingTop: '0px',
+                paddingLeft: '0px',
+                paddingRight: '10px',
             }} src={logo} alt="logo" />,
-            <h1 style={{
-                display: 'inline-block',
-                height: '100vh',
-                paddingRight: '500px'
-             
 
-
-            }} >Welcome to NBA Database</h1>
+            <section>
+                 <h1> Welcome to the NBA Database!</h1>
+                 <button type="button" to='/nbaplayer'>  
+                    Check out the NBA Players Page
+                </button>
+            </section>
+                
         </div>
     );
 };

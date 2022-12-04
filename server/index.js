@@ -224,24 +224,56 @@ app.get("/total_championships/:result_champ", async (req, res) => {
   }
 })
 
+app.get("/teams", async (req, res) => {
+  try {
+      // const {team_name_value} = req.params;
+
+      const allTeams = await pool.query("SELECT team_name FROM team");
+
+      res.json(allTeams.rows);
+
+  } catch (error) {
+      console.error(error.message)
+  }
+})
+
+
+app.get("/positions", async (req, res) => {
+  try {
+      // const {team_name_value} = req.params;
+
+      const allPositions = await pool.query("SELECT DISTINCT player_position FROM player");
+
+      res.json(allPositions.rows);
+
+  } catch (error) {
+      console.error(error.message)
+  }
+})
+
 app.get("/search", async (req, res) => {
   try {
-      const {teams,positions} = req.query;
+      const {team,position} = req.query;
 
-      var modifiedQuery;
+      var modifiedQuery = await pool.query("SELECT * FROM player WHERE player_position = $1 and team_name = $2",[position, team]);
+
       
-      if(teams == "All" && positions == "All")
-      {
-        modifiedQuery = await pool.query("SELECT * FROM player");
-      }
-      else if(teams == "All")
-      {
-        modifiedQuery = await pool.query("SELECT * FROM player WHERE positions = $1",[positions]);
-      }
-      else if(positions == "All")
-      {
-        modifiedQuery = await pool.query("SELECT * FROM player WHERE teams = $1",[teams]);
-      }
+      // if(teams == "All" && positions == "All")
+      // {
+      //   modifiedQuery = await pool.query("SELECT * FROM player");
+      // }
+      // else if(teams == "All")
+      // {
+      //   modifiedQuery = await pool.query("SELECT * FROM player WHERE player_position = $1",[position]);
+      // }
+      // else if(positions == "All")
+      // {
+      //   modifiedQuery = await pool.query("SELECT * FROM player WHERE team_name = $1",[team]);
+      // }
+      // else
+      // {
+      //   modifiedQuery = await pool.query("SELECT * FROM player WHERE player_position = $1 and team_name = $2",[position, team]);
+      // }
       
       res.json(modifiedQuery.rows);
   } catch (error) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/Users/tejassingh/proj412_1/Nba-Website-master/src/assets/nbalogo.png';
+import logo from '/Users/tejassingh/proj412_1/Nba-Website-master/src/assets/bw_logo.png';
 
 import {
     Nav,
@@ -14,7 +14,7 @@ const Navbar = () => {
             <Nav>
                 <Bars />
                 <div style={{
-                    width: 1200,
+                    width: 400,
                     height: 'auto',
                     marginLeft: 1,
                     marginTop: 10,
@@ -24,7 +24,8 @@ const Navbar = () => {
                     cursor: 'pointer'
                 }}>
                     <img src={logo} style={{
-                        width: 200,
+                        marginLeft: -540,
+                        width: 150,
                         height: 50
                     }}/>
                 </div>
