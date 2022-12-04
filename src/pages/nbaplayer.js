@@ -18,7 +18,7 @@ const Nbaplayer = () => {
     
     return (
     <div className='Players'>
-        <table className="table mt-5 text-center">
+       <table className='tablePlayer'>
             <thead>
                 <th>Name</th>
                 <th>Team</th>
@@ -36,7 +36,7 @@ const Nbaplayer = () => {
                 ))
                 }
             </tbody>
-        </table>    
+        </table> 
     </div>
     );
 };

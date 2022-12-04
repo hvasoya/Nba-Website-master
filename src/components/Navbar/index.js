@@ -38,7 +38,7 @@ const Navbar = () => {
                     <NavLink to='/nbasalary' activeStyle>
                         NBA Player Salaries
                     </NavLink>
-                    <NavLink to='/nbacoach' activeStyle>
+                    <NavLink to='/nbateam' activeStyle>
                         NBA Teams
                     </NavLink>
                     <NavLink to='/nbachamp' activeStyle>
