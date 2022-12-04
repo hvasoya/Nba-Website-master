@@ -32,8 +32,11 @@ The home page will have a navigation bar at the top that guides through routes o
 ![1](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.45.21%20PM.png)
 
 ### NBA Players:
-If the user does not have an account, they are able to click the register link in order to create an account. To create an account, the user must enter a username and a password and click the Register button. This will create their account and take them to the dashboard, which is the “My Games” page which will be blank since they don’t have any games yet.
+The nba player page will have the nba player database that will display different player attributes and the user can filter the attributes to display in various categories.
 
+![2](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.06%20PM.png)
+![3](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.30%20PM.png)
+![4](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.41%20PM.png)
 
 ### Player's Salaries:
 On the dashboard, the user can view all games that are in their wishlist. In order to remove a game from your wishlist, press the "Delete Game" button and it will be removed from your list.
