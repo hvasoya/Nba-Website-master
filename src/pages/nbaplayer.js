@@ -10,7 +10,7 @@ const Nbaplayer = () => {
     async function onPageLoad(e){
         try{
             e.preventDefault();
-            const response = await fetch('http://localhost:5000/search/?teams='+team+'&positions='+positions);
+            const response = await fetch('http://localhost:5000/search/?team='+team+'&position='+position);
             const parseResponse = await response.json();
             setPlayers(parseResponse);
         }

@@ -224,6 +224,55 @@ app.get("/total_championships/:result_champ", async (req, res) => {
   }
 })
 
+app.get("/search", async (req, res) => {
+  try {
+      const {teams,positions} = req.query;
+
+      var modifiedQuery;
+      
+      if(teams == "All" && positions == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player");
+      }
+      else if(teams == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player WHERE positions = $1",[positions]);
+      }
+      else if(positions == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player WHERE teams = $1",[teams]);
+      }
+      
+      res.json(modifiedQuery.rows);
+  } catch (error) {
+      console.error(error.message)
+  }
+})
+
+app.get("/search/team", async (req, res) => {
+  try {
+      const {minExperience, maxExperience} = req.query;
+
+      var modifiedQuery;
+      
+      if(teams == "All" && positions == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player");
+      }
+      else if(teams == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player WHERE positions = $1",[positions]);
+      }
+      else if(positions == "All")
+      {
+        modifiedQuery = await pool.query("SELECT * FROM player WHERE teams = $1",[teams]);
+      }
+      
+      res.json(modifiedQuery.rows);
+  } catch (error) {
+      console.error(error.message)
+  }
+})
 
 // UPDATE:
 
