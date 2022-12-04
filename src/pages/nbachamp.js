@@ -10,7 +10,7 @@ const Nbachamp = () => {
                 height: '100vh'
             }}
         >
-            <h1>Welcome to GeeksforGeeks Events</h1>
+            <h1 style={{alignItems: 'top'}}>NBA Database</h1>
         </div>
     );
 };

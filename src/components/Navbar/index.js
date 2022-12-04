@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../Navbar/lbj.jpg';
+
 import {
     Nav,
     NavLink,
@@ -11,7 +13,21 @@ const Navbar = () => {
         //<>
             <Nav>
                 <Bars />
-
+                <div style={{
+                    width: 1200,
+                    height: 'auto',
+                    marginLeft: 1,
+                    marginTop: 10,
+                    display: 'flex',
+                    justifyContent: 'left',
+                    alignItems: 'flex-start',
+                    cursor: 'pointer'
+                }}>
+                    <img src={logo} style={{
+                        width: 60,
+                        height: 50
+                    }}/>
+                </div>
                 <NavMenu>
                     <NavLink to='/' activeStyle>
                         Home
