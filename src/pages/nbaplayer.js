@@ -1,47 +1,37 @@
-import React, {Fragment} from 'react';
-
-
+import React, {useState, useEffect} from 'react';
 const Nbaplayer = () => {
-        return (
-        <Fragment> 
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Player Name</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                </tr>
-                <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                </tr>
-                </tbody>
-            </table> 
-        </Fragment>
-        // <div
-        //     style={{
-        //         display: 'flex',
-        //         justifyContent: 'center',
-        //         alignItems: 'center',
-        //         height: '100vh',
+    const [players, setPlayers] = useState([]);
 
-        //     }}
-        // >
-        //     <h1>This is an NBA database</h1>
-        // </div>
+    async function onEnter(){
+        try{
+            const response = await fetch('http://localhost:5000/total_players')
+            const parseResponse = await response.json();
+            setPlayers(parseResponse);
+        }
+        catch (error) {
+            console.error(error.message)
+        }
+    }
+    useEffect(() => {
+        onEnter();
+      }, []);
+    
+    return (
+    <div className='Players'>
+        <table className="table my-5">
+            <tbody>
+                {players.map(player => (
+                    <tr key={player.player_name}>
+                        <td>{player.player_name}</td>
+                        <td>{player.team_name}</td>
+                        <td>{player.player_position}</td>
+                        <td>{player.player_age}</td>
+                    </tr>
+                ))
+                }
+            </tbody>
+        </table>    
+    </div>
     );
 };
 
