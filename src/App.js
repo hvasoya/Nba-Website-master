@@ -1,24 +1,4 @@
-/*
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-
-        </p>
-
-      </header>
-    </div>
-  );
-}
-
-export default App;
-
- */
 
 import React from 'react';
 import './App.css';
@@ -27,10 +7,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import Nbaplayer from './pages/nbaplayer';
 import Nbasalary from './pages/nbasalary';
-import Nbacoach from './pages/nbacoach';
+import Nbateam from './pages/nbateam';
 import Nbachamp from './pages/nbachamp';
-//import Blogs from './pages/blogs';
-//import SignUp from './pages/signup';
+
+
 
 function App() {
     return (
@@ -40,7 +20,7 @@ function App() {
                 <Route path='/' exact element={<Home/>} />
                 <Route path='/nbaplayer' element={<Nbaplayer/>} />
                 <Route path='/nbasalary' element={<Nbasalary/>} />
-                <Route path='/nbacoach' element={<Nbacoach/>} />
+                <Route path='/nbateam' element={<Nbateam/>} />
                 <Route path='/nbachamp' element={<Nbachamp/>} />
             </Routes>
         </Router>

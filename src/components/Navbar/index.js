@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '/Users/tejassingh/proj412_1/Nba-Website-master/src/assets/bw_logo.png';
+
 import {
     Nav,
     NavLink,
@@ -11,22 +13,37 @@ const Navbar = () => {
         //<>
             <Nav>
                 <Bars />
-
+                <div style={{
+                    width: 400,
+                    height: 'auto',
+                    marginLeft: 1,
+                    marginTop: 10,
+                    display: 'flex',
+                    justifyContent: 'left',
+                    alignItems: 'flex-start',
+                    cursor: 'pointer'
+                }}>
+                    <img src={logo} style={{
+                        marginLeft: -540,
+                        width: 150,
+                        height: 50
+                    }}/>
+                </div>
                 <NavMenu>
                     <NavLink to='/' activeStyle>
                         Home
                     </NavLink>
                     <NavLink to='/nbaplayer' activeStyle>
-                        Nbaplayer
+                        NBA Players
                     </NavLink>
                     <NavLink to='/nbasalary' activeStyle>
-                        Nbasalary
+                        NBA Player Salaries
                     </NavLink>
-                    <NavLink to='/nbacoach' activeStyle>
-                        Nbacoach
+                    <NavLink to='/nbateam' activeStyle>
+                        NBA Teams
                     </NavLink>
                     <NavLink to='/nbachamp' activeStyle>
-                        Nbachamp
+                        NBA Championships
                     </NavLink>
                     {/* Second Nav */}
                     {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

@@ -6,7 +6,7 @@ export const Nav = styled.nav`
 background: #8B0000;
 height: 60px;
 display: flex;
-justify-content: space-between;
+justify-content: flex-end;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 z-index: 12;
 /* Third Nav */
@@ -17,6 +17,7 @@ export const NavLink = styled(Link)`
 color: #ffffff;
 display: flex;
 align-items: center;
+/*justify-content: flex-end;*/
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
@@ -31,7 +32,7 @@ display: none;
 color: #808080;
 @media screen and (max-width: 768px) {
 	display: block;
-	position: absolute;
+	position: left;
 	top: 0;
 	right: 0;
 	transform: translate(-100%, 75%);
@@ -43,12 +44,7 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -24px;
-/* Second Nav */
-/* margin-right: 24px; */
-/* Third Nav */
-/* width: 100vw;
-white-space: nowrap; */
+margin-right: -250px;
 @media screen and (max-width: 768px) {
 	display: none;
 }
@@ -58,9 +54,6 @@ export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
 margin-right: 24px;
-/* Third Nav */
-/* justify-content: flex-end;
-width: 100vw; */
 @media screen and (max-width: 768px) {
 	display: none;
 }
