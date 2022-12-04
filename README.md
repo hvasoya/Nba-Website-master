@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This is the nba website that allows the user to analyze data about nba players, teams, salaries and championships.
 
 ### `npm start`
 
