@@ -5,8 +5,19 @@ const Nbaplayer = () => {
     const [team,setTeam] = useState([]);
     const [positions, setPositions] = useState("All");
     const [position, setPosition] = useState([]);
-
+9
     // cost [,] = useState([]);
+    async function onPageLoad(e){
+        try{
+            e.preventDefault();
+            const response = await fetch('http://localhost:5000/search/?teams='+team+'&positions='+positions);
+            const parseResponse = await response.json();
+            setPlayers(parseResponse);
+        }
+        catch (error) {
+            console.error(error.message)
+        }
+    }
 
     async function showAllPlayers(){
         try{
@@ -48,18 +59,27 @@ const Nbaplayer = () => {
       }, []);
 
       useEffect(() => {
-        getPositons();
+        getPositions();
       }, []);
 
     return (
     <div className='Players'>
-        <label>Team Name:</label>
-        <select name = 'teamValue' size={teams.size + 1} onChange={e => setTeam(e.target.value)}>
-            <option value="All">All</option>
-            {teams.map(team => (
-                <option value={team.team_name}>{team.team_name}</option>
-            ))}
-        </select>
+        <Form onSubmit = {onPageLoad} className = "filterform" style = {{marginTop: 25}}>
+            <label>Team Name:</label>
+            <select name = 'teamValue' size={teams.size + 1} onChange={e => setTeam(e.target.value)}>
+                <option value="All">All</option>
+                {teams.map(team => (
+                    <option value={team.team_name}>{team.team_name}</option>
+                ))}
+            </select>
+            <select name = 'positionValue' size={positions.size + 1} onChange={e => setPositions(e.target.value)}>
+                <option value="All">All</option>
+                {positions.map(position => (
+                    <option value={position.position_name}>{position.position_name}</option>
+                ))}
+            </select>
+        </Form>
+        
        <table className='tablePlayer'>
             <thead>
                 <th>Name</th>
