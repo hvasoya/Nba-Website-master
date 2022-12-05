@@ -41,16 +41,17 @@ The nba player page will have the nba player database that will display differen
 ### Player's Salaries:
 On the dashboard, the user can view all games that are in their wishlist. In order to remove a game from your wishlist, press the "Delete Game" button and it will be removed from your list.
 
+![5](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.49.29%20PM.png)
 
 ### NBA Team:
 The store page has all the games available in the store. There is a search bar at the top of the page that allows you to search for a specific game based on the title. In order to filter the list of games based on genre, rating, or price, you can use the buttons on the top and press enter. The games that match the criteria will remain on the page. In order to add a game to your wishlist, you simply have to press the “Add Game” button beside the game, which will add a copy of it to the “My Games” page.
 
-
+![6](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.49.50%20PM.png)
 
 ### NBA Championship:
 Clicking the “Store” button takes you to the store page. Clicking the “My Games” button takes you to the dashboard. Clicking the “Sign In” page takes you to the login page.
 
-
+![7](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.50.09%20PM.png)
 
 ### Stopping the application:
 In order to end the application, simply close the tab on your browser.
