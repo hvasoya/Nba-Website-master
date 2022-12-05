@@ -27,31 +27,28 @@ After you done installing the packages, then create react app using
 
 # Application Walkthrough 
 ### Home page:
-The home page will have a navigation bar at the top that guides through routes of different pages and it will also have a button that once clicked will navigate to the nba player page.
+The home page will have a navigation bar at the top that guides through routes of different pages and it will also have a button that once clicked will navigate to the NBA player page.
 
 ![1](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.45.21%20PM.png)
 
 ### NBA Players:
-The nba player page will have the nba player database that will display different player attributes and the user can filter the attributes to display in various categories.
+The NBA player page will have the NBA player database that will display different player attributes such as their name, team, position age, and the user can filter the attributes through team name, and position to display in various categories.
 
 ![2](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.06%20PM.png)
 ![3](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.30%20PM.png)
 ![4](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.48.41%20PM.png)
 
 ### Player's Salaries:
-On the dashboard, the user can view all games that are in their wishlist. In order to remove a game from your wishlist, press the "Delete Game" button and it will be removed from your list.
+The salary page will display the NBA database player salary, the player ID, and player name. The users can filter this salary database by the the minimum and maximum salary values, as noted at the top of the screenshot.
 
 ![5](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.49.29%20PM.png)
 
 ### NBA Team:
-The store page has all the games available in the store. There is a search bar at the top of the page that allows you to search for a specific game based on the title. In order to filter the list of games based on genre, rating, or price, you can use the buttons on the top and press enter. The games that match the criteria will remain on the page. In order to add a game to your wishlist, you simply have to press the “Add Game” button beside the game, which will add a copy of it to the “My Games” page.
+The NBA team page will have the NBA team database that will display coach_name, team name and coach_experience attributes. The users can filter the coach_experience with minimum and max values to filter the database.
 
 ![6](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.49.50%20PM.png)
 
 ### NBA Championship:
-Clicking the “Store” button takes you to the store page. Clicking the “My Games” button takes you to the dashboard. Clicking the “Sign In” page takes you to the login page.
+The NBA championship page will have the NBA championship database that will display champ_teamname, champ_year and team_result as its attributes. The user can filter the database with win or loss and it will display the database with the expected output.
 
 ![7](https://github.com/hvasoya/Nba-Website-master/blob/main/Screen%20Shot%202022-12-04%20at%204.50.09%20PM.png)
-
-### Stopping the application:
-In order to end the application, simply close the tab on your browser.
